@@ -1,8 +1,8 @@
 {
   "name": "log4js-socket.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Socket.io Appender for log4js-node",
-  "homepage": "https://log4js-node.github.io/log4js-node/",
+  "homepage": "https://github.com/imbooo/log4js-socket.io",
   "files": [
     "lib",
     "types"
@@ -20,10 +20,10 @@
   "author": "imbooo <imbooo@dingtalk.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/log4js-node/redis.git"
+    "url": "https://github.com/imbooo/log4js-socket.io.git"
   },
   "bugs": {
-    "url": "http://github.com/log4js-node/redis/issues"
+    "url": "https://github.com/imbooo/log4js-socket.io/issues"
   },
   "engines": {
     "node": ">=6.0"
@@ -40,7 +40,6 @@
   "dependencies": {
     "debug": "^4.1.1",
     "log4js": "^4.1.0",
-    "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0"
   },
   "devDependencies": {
