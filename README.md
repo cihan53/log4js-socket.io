@@ -7,9 +7,10 @@ npm install log4js-socket.io
 
 ## Configuration
 
-* `type` - `socketIO`
-* `path` - `string` (optional, defaults to `/`) 
-* `event` - `string` (optional, defaults to `message`) 
+* `type` - `log4js-socket.io`
+* `name` - `string` (optional, defaults to `log4js`) 
+* `env` - `string` (optional, defaults to `dev`) 
+* `event` - `string` (optional, defaults to `log4js`) 
 * `layout` - `object` (optional, defaults to `messagePassThroughLayout`) - the layout to use for log events (see [layouts](layouts.md)).
 
 The appender will use the Redis PUBLISH command to send the log event messages to the channel.
@@ -19,7 +20,7 @@ The appender will use the Redis PUBLISH command to send the log event messages t
 ```javascript
 log4js.configure({
   appenders: {
-    io: { type: 'log4js-socket.io',url:'ws://io.net', path: '/admin',event:'message' }
+    io: { type: 'log4js-socket.io',url:'ws://io.net',name:'crm',env:'dev' }
   },
   categories: { default: { appenders: ['io'], level: 'info' } }
 });
